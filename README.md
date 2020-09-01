@@ -64,6 +64,6 @@
 1、将项目中的文件下载到本地  
 2、注意备份好原来的文件  
 3、将文件放入Hoshinobot的对应文件夹中，重复的文件进行替换  
-如项目中的“hoshino\util\__ init__ .py”替换到“你的Hoshino目录\hoshino\util\__ init__ .py”中  
+如项目中的“hoshino\util\ __ init__ .py”替换到“你的Hoshino目录\hoshino\util\ __ init__ .py”中  
 4、重新启动Hoshinobot  
 
