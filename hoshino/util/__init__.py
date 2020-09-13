@@ -139,9 +139,11 @@ class Json_RW:
             return None
     
     def write(self, data):
-        if os.path.exists(self.json):  #文件存在
-            with open(self.json, 'w', encoding='utf8') as f:
-                json.dump(data, f, ensure_ascii=False)
+        if not os.path.exists(self.json):           #文件不存在
+            if not os.path.exists(self.filepath):   #文件夹不存在
+                os.makedirs(self.filepath)
+        with open(self.json, 'w', encoding='utf8') as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
 
     def delete(self):   #删除json内容
         if os.path.exists(self.json):  #文件存在
